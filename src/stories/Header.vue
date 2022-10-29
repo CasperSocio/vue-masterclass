@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Button from '@/components/Button/Button.vue'
 import { useAuthStore } from '@/stores/auth.store'
+import { Button } from 'vue-masterclass-library'
 
 const auth = useAuthStore()
 
