@@ -1,8 +1,9 @@
 {
 	"name": "vue-masterclass",
-	"private": true,
-	"version": "1.0.0",
+	"version": "0.1.0",
+	"author": "Casper Tollefsen (https://github.com/CasperSocio)",
 	"type": "module",
+	"private": true,
 	"scripts": {
 		"build": "vite build",
 		"dev": "vite",
@@ -43,5 +44,10 @@
 		"vite": "^3.1.8",
 		"vue-loader": "^17.0.0",
 		"vue-tsc": "^1.0.9"
-	}
+	},
+	"license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/CasperSocio/vue-masterclass"
+    }
 }
