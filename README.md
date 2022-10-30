@@ -30,9 +30,29 @@ You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/
 - Styling language - [Sass](https://sass-lang.com/)
 - Test suite - [Cypress](https://www.cypress.io/)
 
-## Get Started
+## Getting Started
+
+### 1 Install Dependencies
+
+Since `package-lock.json` is included in the repo, we want to avoid overriding it with `npm i`. Instead we run `npm ci`:
 
 Run `npm ci` to install dependencies.
+
+### 2 Connect External Library
+
+This repo is using an external component library, which must be installed locally (until it gets published). The library can be cloned from GitHub and linked to this repo:
+
+1. We want the library to be a sibling directory to this one, so navigate to the parent with `cd ..`.
+1. Clone the library with `git clone https://github.com/CasperSocio/vue-masterclass-library.git`.
+1. Navigate into the library `cd vue-masterclass-library` and run `npm ci` to install dependencies.
+1. Run `npm run build` to generate component exports. The generated files in `./dist/` is what we're going to import in this project.
+1. Now we need to link the library to this project:
+	1. Run `npm link`. You can check that the link was established with `npm ls -g`.
+	1. Navigate back to this project `cd ../vue-masterclass` and run `npm link vue-masterclass-library`.
+
+You now have access to the external library in this project. You might have to reload VS Code in order to get rid of some TypeScript warnings.
+
+## Commands
 
 Run `npm run dev` to start development server.
 
