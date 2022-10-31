@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useAuthStore } from '@/stores/auth.store'
-import { Button, Header } from 'vue-masterclass-library'
+import { Button, Header } from '@caspersocio/vue-masterclass-library'
 
 const auth = useAuthStore()
 </script>

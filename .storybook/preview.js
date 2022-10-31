@@ -2,7 +2,7 @@ import { addons } from '@storybook/addons'
 import { app } from '@storybook/vue3'
 import { createPinia } from 'pinia'
 import i18n from '../src/setup/i18n'
-import 'vue-masterclass-library/style.css'
+import '@caspersocio/vue-masterclass-library/style.css'
 import '../src/style/main.scss'
 
 const pinia = createPinia()
